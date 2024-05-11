@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *
+        {
+            margin: 0;
+            background-color: antiquewhite;
+        }
+        .main
+        {
+         background-color: blue;
+         box-shadow: 4px 4px 7px red;
+         color: black;
+         text-align: center;
+         border-radius: 15px ;
+        }
+        .Btn
+        {
+            border: 2px solid black;
+            border-radius:30px;
+            text-align: center;
+            color: black;
+            background-color:red;
+            margin-left: 200px;
+            width: 170px;
+            height: 60px;
+            box-shadow: 4px 4px 2px rgb(15, 29, 216);
+        }
+        #Select
+        {
+         color: #bfff00;
+         background-color: black;
+         border-radius: 15px ;
+         box-shadow:4px 4px 2px #1d06eb ;
+         text-align:center;
+        }
+        .me
+        {
+            background-color: rgb(96, 215, 17);
+            color: rgb(10, 62, 234);
+            text-align: center;
+            border-radius:15px ;
+            height: 20px;
+        }
+    </style>
+    <h1 class="main">Project Increament , Decreament & Reset</h1>
+    <br>
+        <h1 id="Select">0</h1>
+        <br>
+        <button class="Btn"onclick="Increament()">Increament</button>
+        <button class="Btn"onclick="Decreament()">Decreament</button>
+        <button class="Btn"onclick="Reset()">Reset</button>
+        <br>
+        <br>
+        <h3 class="me">Made By Aliyan Khan</h3>
+        <script>
+          var data = 0;
+          function Increament(){
+          data++
+          var Increament = document.getElementById('Select').innerText=data
+          }
+          function Decreament(){
+          data--
+          var Decreament = document.getElementById('Select').innerText=data
+          }
+          function Reset(){
+          data = 0 ;
+          var Reset = document.getElementById('Select').innerText=data
+          }
+        </script>
+</body>
+</html>
